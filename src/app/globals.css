@@ -25,12 +25,12 @@ body {
   }
 
   .text-preset-4 {
-    @apply text-[16px] leading-[100%] tracking-[0px] font-normal text-stone-900;
+    @apply text-[16px] leading-[150%] tracking-[0px] font-normal text-stone-900;
     font-family: "Outfit", sans-serif;
   }
 
   .text-preset-4-bold {
-    @apply text-[14px] leading-[100%] tracking-[0px] font-bold text-stone-900;
+    @apply text-[14px] leading-[150%] tracking-[0px] font-bold text-stone-900;
     font-family: "Outfit", sans-serif;
   }
 }

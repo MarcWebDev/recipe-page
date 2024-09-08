@@ -1,27 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components {
+  .text-preset-1 {
+    @apply text-[40px] leading-[100%] tracking-[0px] font-normal text-stone-900;
+    font-family: "Young Serif", serif;
+  }
+
+  .text-preset-2 {
+    @apply text-[28px] leading-[100%] tracking-[0px] font-normal text-stone-900;
+    font-family: "Young Serif", serif;
+  }
+
+  .text-preset-3 {
+    @apply text-[20px] leading-[150%] tracking-[0px] font-semibold text-stone-900;
+    font-family: "Outfit", sans-serif;
+  }
+
+  .text-preset-4 {
+    @apply text-[16px] leading-[100%] tracking-[0px] font-normal text-stone-900;
+    font-family: "Outfit", sans-serif;
+  }
+
+  .text-preset-4-bold {
+    @apply text-[14px] leading-[100%] tracking-[0px] font-bold text-stone-900;
+    font-family: "Outfit", sans-serif;
   }
 }
